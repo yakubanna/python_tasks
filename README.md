@@ -1,16 +1,16 @@
 # python_tasks
 Solving simple python tasks
 
-labyrinths1 is the solution of the problem:
+LABYRINTHS1 is the solution of the problem:
 There is a labyrinth given by the cell field, in which w rows and h columns. The mouse is initially located in a cell with coordinates (x, y). It can move along the cell borders to the left, right, up and down, if there is no barrier in the cell and it does not climb to the border. It is necessary for each cell (i, j) of the labyrinth to find the length of the minimum path from the cell (x, y) or to determine that it is impossible to get to this cell.
 
-dinner_helper is the solution of the problem:
+DINNER_HELPER is the solution of the problem:
 N silent philosophers sit around the round table, before each philosopher stands a plate of spaghetti. Forks lie on the table between each pair of the closest philosophers.
 Every philosopher can either eat or think. Food intake is not limited to the amount of spaghetti left - an infinite supply is implied. Nevertheless, a philosopher can eat only when he holds two forks - taken from the right and left.
 Each philosopher can take the nearest fork (if available), or put - if he already holds it. Taking each fork and returning it to the table are separate actions that must be performed one after another.
 The essence of the problem is to develop a model of behavior (parallel algorithm), in which none of the philosophers will not starve, that is, they will always alternate meals and reflections (the philosopher should start with reflection).
 
-extended_dict is the solution of the problem:
+EXTENDED_DICT is the solution of the problem:
 It is necessary to write the ExtendedDict class, which will be inherited from the standard dict and will support the following additional features:
 
     The keys of the ExtendedDict class object can only be strings, an attempt to set a non-string key or to get a value on a non-string key should result in the ValueError   
@@ -19,7 +19,7 @@ It is necessary to write the ExtendedDict class, which will be inherited from th
     The ExtendedDict class should support the syntax of the slices, i.e. a slice of an object of the ExtendedDict class should return the corresponding slice of the list of pairs (key, value) sorted by the key (it is not necessary to support the slice syntax for changing the object)
     
     
-life_emulation is the solution of the problem:
+LIFE_EMULATION is the solution of the problem:
 We need to write a LifeEmulation class that models the modification of the game "Life". The game is a two-dimensional field, in each cell of which a non-negative number is written. In our modification there are the following conditions for the "development" and "degradation" of cells:
 
     an empty cell, or a cell with a value of 0, receives a value of 1, provided that it is surrounded by 3 cells with a value greater than 0;
@@ -39,9 +39,11 @@ The following interface is expected from your class:
     An attribute that must return a two-dimensional array of the current state of the field.
     
     
-rome_to_arabic is the solution of the problem:
+ROME_TO_ARABIC is the solution of the problem:
 Given a number written in the Roman numeral system. You need to write a function that translates it into a decimal number system.
-spoon is the solution of the problem: It is required to write an interpreter for the isoteric language Spoon (https://ru.wikipedia.org/wiki/Spoon). Running: python3 spoon.py path_to_spoon_code_file.
+
+
+SPOON is the solution of the problem: It is required to write an interpreter for the isoteric language Spoon (https://ru.wikipedia.org/wiki/Spoon). Running: python3 spoon.py path_to_spoon_code_file.
 IMPORTANT! If the read operation from the standard input stream returns EOF, then this should be treated as writing to the cell of code 0.
 We assume that the cells can store signed numbers up to 4 bytes, but if a command is issued to output the value in the cell, then there must be a one-byte value, otherwise we consider this situation undefined behaviour.
 It is assumed that a valid file containing the Spoon code without delimiters (alphabet 0/1) will be fed to the input.
